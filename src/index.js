@@ -8,8 +8,8 @@ import Routes from './routes';
 function App() {
   return (
     <>
-      <StatusBar barStyle="light-content" backgroundColor="#4356E4" />
       <Routes />
+      <StatusBar barStyle="light-content" backgroundColor="#080a11" />
     </>
   );
 }

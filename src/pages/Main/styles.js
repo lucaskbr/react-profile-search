@@ -12,6 +12,7 @@ export const Form = styled.View`
   padding-bottom: 20px;
   border-bottom-width: 1px;
   border-color: #1d1d1d;
+  width: 100%;
 `;
 
 export const Input = styled.TextInput.attrs({
@@ -43,6 +44,7 @@ export const List = styled.FlatList.attrs({
   showsVerticalScrollIndicator: false,
 })`
   margin-top: 20px;
+  background-color: #111422;
 `;
 
 export const User = styled.View`
@@ -51,6 +53,7 @@ export const User = styled.View`
   margin: 0 5px 30px;
   border-radius: 15px;
 `;
+
 export const Avatar = styled.Image`
   width: 64px;
   height: 64px;
@@ -75,6 +78,7 @@ export const Bio = styled.Text.attrs({
   text-align: center;
   padding: 0 10px 0 10px;
 `;
+
 export const ProfileButton = styled(RectButton)`
   margin-top: 10px;
   align-self: stretch;

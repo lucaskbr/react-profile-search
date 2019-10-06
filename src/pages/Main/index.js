@@ -24,7 +24,7 @@ class Main extends Component {
     title: 'Usuários',
   };
 
-  static PropTypes = {
+  static propTypes = {
     navigation: PropTypes.shape({
       navigate: PropTypes.func,
     }).isRequired,
@@ -74,14 +74,11 @@ class Main extends Component {
       loading: false,
     });
 
-    console.tron.log(this.state);
-
     Keyboard.dismiss();
   };
 
   handleNavigate = user => {
     const { navigation } = this.props;
-
     navigation.navigate('User', { user });
   };
 
