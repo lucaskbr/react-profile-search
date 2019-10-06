@@ -21,12 +21,9 @@ export const Input = styled.TextInput.attrs({
   flex: 1;
   height: 40px;
   background: #1c2431;
-  border-radius: 4px;
   padding: 0 15px;
   border: 2px solid #1c2431;
   border-bottom-color: #4421ff;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
   color: #eee;
 `;
 
@@ -51,12 +48,12 @@ export const User = styled.View`
   background: #1c2431;
   align-items: center;
   margin: 0 5px 30px;
-  border-radius: 15px;
 `;
 
 export const Avatar = styled.Image`
   width: 64px;
   height: 64px;
+  border: 1px solid #eee;
   border-radius: 32px;
   background: #eee;
   margin-top: 10px;

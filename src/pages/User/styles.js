@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { ActivityIndicator } from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
@@ -18,6 +19,7 @@ export const Avatar = styled.Image`
   height: 100px;
   border-radius: 50px;
   background: #eee;
+  border: 1px solid #fff;
 `;
 
 export const Name = styled.Text`
@@ -27,8 +29,9 @@ export const Name = styled.Text`
   margin-top: 10px;
   text-align: center;
 `;
+
 export const Bio = styled.Text.attrs({
-  numberOfLines: 2,
+  numberOfLines: 3,
 })`
   font-size: 14px;
   line-height: 18px;
@@ -37,15 +40,21 @@ export const Bio = styled.Text.attrs({
   text-align: center;
 `;
 
+export const Loading = styled(ActivityIndicator)`
+  margin-top: 125px;
+`;
+
 export const Stars = styled.FlatList.attrs({
-  showVerticalScrollIndicator: false,
+  showsVerticalScrollIndicator: false,
 })`
+  background-color: #111422;
   margin-top: 20px;
 `;
 
 export const Starred = styled.View`
-  background: #f5f5f5;
-  border-radius: 4px;
+  background: #1c2431;
+  border: 0px solid #4430ff;
+  border-left-width: 6px;
   padding: 10px 15px;
   margin-bottom: 20px;
   flex-direction: row;
@@ -55,6 +64,7 @@ export const Starred = styled.View`
 export const OwnerAvatar = styled.Image`
   height: 42px;
   width: 42px;
+  border: 1px solid #eee;
   border-radius: 21px;
   background: #eee;
 `;
@@ -69,7 +79,7 @@ export const Title = styled.Text.attrs({
 })`
   font-size: 15px;
   font-weight: bold;
-  color: #333;
+  color: #eee;
 `;
 
 export const Author = styled.Text`
