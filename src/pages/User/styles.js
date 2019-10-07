@@ -40,10 +40,6 @@ export const Bio = styled.Text.attrs({
   text-align: center;
 `;
 
-export const Loading = styled(ActivityIndicator)`
-  margin-top: 125px;
-`;
-
 export const Stars = styled.FlatList.attrs({
   showsVerticalScrollIndicator: false,
 })`

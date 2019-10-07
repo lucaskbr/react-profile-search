@@ -37,6 +37,8 @@ class Main extends Component {
   };
 
   async componentDidMount() {
+    // await AsyncStorage.removeItem('users');
+
     const users = await AsyncStorage.getItem('users');
 
     if (users) {
@@ -74,7 +76,7 @@ class Main extends Component {
       loading: false,
     });
 
-    Keyboard.dismiss();
+    await Keyboard.dismiss();
   };
 
   handleNavigate = user => {
@@ -92,6 +94,7 @@ class Main extends Component {
             autoCorrect={false}
             autoCapitalize="none"
             placeholder="Adicionar usuário"
+            value={newUser}
             onChangeText={text => this.setState({ newUser: text })}
             returnKeyType="send"
             onSubmitEditing={this.handleAddUser}

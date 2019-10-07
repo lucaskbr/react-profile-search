@@ -6,6 +6,7 @@ import './config/ReactotronConfig';
 import Routes from './routes';
 
 function App() {
+  console.disableYellowBox = true;
   return (
     <>
       <Routes />
