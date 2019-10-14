@@ -18,7 +18,7 @@ yarn start
 
 ## :rocket: Libs
 
-* [ReactJs](https://github.com/facebook/react)
+* [React Native](https://github.com/facebook/react-native)
 * [Axios](https://github.com/axios/axios)
 * [React Native Gesture Handler](https://github.com/kmagiera/react-native-gesture-handler)
 * [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
